@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SharppAngle Interio - Corporate Interior Design & Turnkey Solutions</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Slick Slider CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.4.47/css/materialdesignicons.min.css"
+        integrity="sha512-/k658G6UsCvbkGRB3vPXpsPHgWeduJwiWGPCGS14IQw3xpr63AEMdA8nMYG2gmYkXitQxDTn6iiK/2fD4T87qA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style3.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand" href="#"><img src="imgandvideo/logo.webp" width="150" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item ms-4">
+                        <span class="contact-info">
+                            <i class="fas fa-envelope me-1"></i>interiowithkundan@gmail.com
+                            <i class="fas fa-phone ms-3 me-1"></i>+91 8210215503
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <h1 data-aos="fade-up" data-aos-duration="1200">WELCOME TO<br>SHARPPANGLE INTERIO</h1>
+            <button class="btn btn-consultation" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200"
+                onclick="openConsultationModal()">Book Free Consultation</button>
+        </div>
+    </section>
+
+    <!-- Consultation Modal -->
+    <div id="consultationModal" class="consultation-modal">
+        <div class="modal-content-consultation">
+            <span class="close-modal" onclick="closeConsultationModal()">&times;</span>
+            <h2>Book Your Free Consultation</h2>
+            <form id="consultationForm" onsubmit="handleFormSubmit(event)">
+                <input type="text" name="name" placeholder="Your Name *" required>
+                <input type="email" name="email" placeholder="Your Email *" required>
+                <input type="tel" name="phone" placeholder="Your Phone *" required>
+                <textarea name="message" placeholder="Tell us about your project" rows="4"></textarea>
+                <button type="submit" class="btn-submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row align-items-center g-5 py-md-5 py-4">
+                <div class="col-lg-5 m-0" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?w=800&h=600&fit=crop"
+                            alt="Kitchen Interior">
+                    </div>
+                </div>
+                <div class="col-lg-7" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="about-content">
+                        <h2>About us</h2>
+                        <p>SharppAngle INTERIO is a firm set up to provide Design and complete Turnkey solutions in the
+                            field of Corporate Interiors. We take care of all your requirements from layout planning,
+                            design, detailing and graphics to complete execution of the works. We have a fully
+                            computerized office and our members are proficient in presentation software such as
+                            3D-Studio, Photoshop and AutoCAD. We give you design presentations on the same, thus
+                            enabling you to completely visualize the project before implementation.</p>
+                        <p>We have on our team, professionals such as architects, engineers, interior designers,
+                            graphics and multimedia experts. For execution of the project we have a well developed
+                            network of civil, electrical and plumbing contractors, carpenters, fabricators, metal and
+                            wood workshops. The Firm was founded on 19th October 2005 but operative since 2004. We have
+                            successfully completed and handed over many projects, including some in different cities of
+                            the Country. The majority of our work has come to us through references of satisfied clients
+                            and some through repeat orders of existing ones.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-duration="800">
+                    <div class="stat-item">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Projects</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="100">
+                    <div class="stat-item">
+                        <div class="stat-number">20+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
+                    <div class="stat-item">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Happy Clients</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="300">
+                    <div class="stat-item">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Quality Assurance</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="services-header" data-aos="fade-up">
+                <h2>OUR SERVICES</h2>
+            </div>
+            <p class="services-subtitle" data-aos="fade-up" data-aos-delay="100">We offer comprehensive design,
+                consultancy and turnkey execution services for Corporate Interiors, Offices, and Commercial Spaces</p>
+
+            <div class="row justify-content-center">
+                <div class="col-md-4 col-lg-3" data-aos="fade-up" data-aos-duration="800">
+                    <div class="service-card">
+                        <div class="card-img p-2">
+                            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=600&fit=crop"
+                                class="rounded-3" alt="Corporate Interiors">
+                        </div>
+                        <div class="service-card-body">
+                            <h3>Corporate Interiors</h3>
+                            <p>Professional office design solutions</p>
+                            <button class="service-btn w-100 rounded-pill">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                    <div class="service-card">
+                        <div class="card-img p-2">
+                            <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800&h=600&fit=crop"
+                                alt="Turnkey Solutions">
+                        </div>
+                        <div class="service-card-body">
+                            <h3>Turnkey Solutions</h3>
+                            <p>Complete project execution</p>
+                            <button class="service-btn w-100 rounded-pill">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                    <div class="service-card">
+                        <div class="card-img p-2">
+                            <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=800&h=600&fit=crop"
+                                alt="Landscaping">
+                        </div>
+                        <div class="service-card-body">
+                            <h3>Landscaping</h3>
+                            <p>Beautiful outdoor spaces</p>
+                            <button class="service-btn w-100 rounded-pill">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery-section position-relative">
+        <div class="container">
+            <div class="row image-slider">
+                <div class="col-md-4">
+                    <div class="slider-item">
+                        <img src="imgandvideo/SharppAngle/IMG_4750.JPG" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="slider-item">
+                        <img src="imgandvideo/SharppAngle/IMG_4753.JPG" class="img-fluid" alt="Image 2">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="slider-item">
+                        <img src="imgandvideo/SharppAngle/IMG_4754.JPG" class="img-fluid" alt="Image 2">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="slider-item">
+                        <img src="imgandvideo/SharppAngle/IMG_4761.JPG" class="img-fluid" alt="Image 2">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="slider-item">
+                        <img src="imgandvideo/SharppAngle/IMG_4764.JPG" class="img-fluid" alt="Image 2">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="slider-item">
+                        <img src="imgandvideo/SharppAngle/IMG_4763.JPG" class="img-fluid" alt="Image 2">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="consultation-bg text-white">
+        <div class="container">
+            <div class="row">
+                <div class="section-title mb-4">
+                    <h2 class="text-center">YOUR DREAM HOME DESIGN THE SHARP ANGLE WAY</h2>
+                    <p class="subtitle text-center">We believe that there is no perfect solution, there are several good
+                        solutions. Our company is
+                        founded on the spirit of creativity and service.</p>
+                </div>
+                <div class="consultation-button text-center">
+                    <a href="" class="btn btn-white rounded-pill text-white border px-5 py-2">Book Consultation Now</a>
+                </div>
+                <div class="card-section mt-md-5 mt-5">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="card bg-white p-3">
+                                <div class="icon">
+                                    <i class="fas fa-lightbulb fa-3x text-primary"></i>
+                                </div>
+                                <div class="content mt-4">
+                                    <h5 class="fw-bold">Creativity in Design</h5>
+                                    <p>Innovative and unique design solutions tailored to your specific requirements and
+                                        context.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card bg-white p-3">
+                                <div class="icon">
+                                    <i class="fas fa-drafting-compass fa-3x text-primary"></i>
+                                </div>
+                                <div class="content mt-4">
+                                    <h5 class="fw-bold">Efficient Space Planning</h5>
+                                    <p>Optimized layout planning that maximizes functionality and aesthetic appeal.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card bg-white p-3">
+                                <div class="icon">
+                                    <i class="fas fa-clock fa-3x text-primary"></i>
+                                </div>
+                                <div class="content mt-4">
+                                    <h5 class="fw-bold">Time Bound Completion</h5>
+                                    <p>Disciplined project management ensuring delivery within specified timelines.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card bg-white p-3">
+                                <div class="icon">
+                                    <i class="fas fa-handshake fa-3x text-primary"></i>
+                                </div>
+                                <div class="content mt-4">
+                                    <h5 class="fw-bold">Personal Involvement</h5>
+                                    <p>Direct communication and deep commitment to ensure maximum client satisfaction.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Process Section -->
+    <section class="process-section">
+        <div class="container">
+            <div class="process-title-box" data-aos="zoom-in">
+                <h2>Our Work Process</h2>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-6 col-md-3" data-aos="fade-up" data-aos-duration="800">
+                    <div class="process-item">
+                        <div class="process-image">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop"
+                                alt="Step 1 - Layout Planning">
+                        </div>
+                        <h3>Layout Planning</h3>
+                        <p class="text-center mt-2">Preparation of layout plans based on client interactions</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                    <div class="process-item">
+                        <div class="process-image">
+                            <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=400&h=400&fit=crop"
+                                alt="Step 2 - Design & Estimates">
+                        </div>
+                        <h3>Design & Estimates</h3>
+                        <p class="text-center mt-2">Detailed estimates, specifications and timelines</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                    <div class="process-item">
+                        <div class="process-image">
+                            <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=400&h=400&fit=crop"
+                                alt="Step 3 - Execution">
+                        </div>
+                        <h3>Execution</h3>
+                        <p class="text-center mt-2">Working drawings and quality monitoring</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                    <div class="process-item">
+                        <div class="process-image">
+                            <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=400&h=400&fit=crop"
+                                alt="Step 4 - Handover">
+                        </div>
+                        <h3>Handover</h3>
+                        <p class="text-center mt-2">Timely completion with all documentation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Stories Section -->
+    <section class="client-stories-section">
+        <div class="container">
+            <h2 class="section-heading" data-aos="fade-up">OUR CLIENT STORIES</h2>
+
+            <div class="row">
+                <div class="col-md-4" data-aos="zoom-in" data-aos-duration="800">
+                    <div class="video-card">
+                            <video controls class="w-100">
+                                <source src="imgandvideo/SharppAngle/MVI_4756.MP4">
+                            </video>
+                        </div>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="100">
+                      <div class="video-card">
+                            <video controls class="w-100">
+                                <source src="imgandvideo/SharppAngle/MVI_4757.MP4">
+                            </video>
+                        </div>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
+                    <div class="video-card">
+                        <div class="video-card">
+                            <video controls class="w-100">
+                                <source src="imgandvideo/SharppAngle/MVI_4758.MP4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Founder Section -->
+    <section class="founder-section">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-lg-7" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="founder-content">
+                        <h2>Our Vision</h2>
+                        <p>We believe that there is no perfect solution, there are several good solutions. Our company
+                            is founded on the spirit of creativity and service. Our works are formulated in the spirit
+                            of the present. Our long-term vision is to become a leading global Interior Designing firm
+                            best known for having transformed the interior working environment.</p>
+
+                        <p>In today's work culture it is normal for people to spend nearly two-thirds of their lives in
+                            offices. It is therefore important to think deeply into providing them with a good working
+                            environment, one that is comfortable, encourages creativity and growth. One that is open and
+                            transparent, having areas for social interaction that creates a greater bonding between
+                            people thus enabling them to act as a unit. We believe in creating such environments by
+                            sensitively considering all these parameters.</p>
+
+                        <p>We are committed to design excellence and providing you with the best quality and service. We
+                            do this throughout all the stages starting from concept to completion. Founded in 2005 and
+                            operative since 2004, the majority of our work has come to us through references of
+                            satisfied clients and repeat orders.</p>
+                    </div>
+                </div>
+                <div class="col-lg-5" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="founder-image">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=800&h=900&fit=crop"
+                            alt="Founder - Ankur Rawat">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo"><img src="imgandvideo/logo.webp" width="150px" alt="SharppAngle Interio"></div>
+                <div class="footer-info mt-3">
+                    <p><i class="fas fa-map-marker-alt me-2"></i>3rd Floor, BANDO ENCLAVE, SATYARI TOLI ROAD NO:-01,
+                        SOLANKI, SINGHMORE, HATIA, RANCHI-834003, JHARKHAND (INDIA)</p>
+                    <p><i class="fas fa-envelope me-2"></i>interiowithkundan@gmail.com</p>
+                    <p><i class="fas fa-phone me-2"></i>+91 8210215503 | +91 8210789308 | +91 651-7966564</p>
+                    <p><i class="fas fa-globe me-2"></i>www.sharpangleinterio.com</p>
+                </div>
+                <div class="footer-links mt-3">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Slick Slider JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100,
+            easing: 'ease-in-out'
+        });
+
+        // Consultation Modal Functions
+        function openConsultationModal() {
+            document.getElementById('consultationModal').style.display = 'block';
+        }
+
+        function closeConsultationModal() {
+            document.getElementById('consultationModal').style.display = 'none';
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function (event) {
+            const modal = document.getElementById('consultationModal');
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+
+        // Handle form submission
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            alert('Thank you! We will contact you soon.');
+            closeConsultationModal();
+            document.getElementById('consultationForm').reset();
+        }
+
+        // Navbar scroll effect
+        // window.addEventListener('scroll', function () {
+        //     const navbar = document.querySelector('.navbar');
+        //     if (window.scrollY > 50) {
+        //         navbar.style.background = 'rgba(0, 0, 0, 0.95)';
+        //     } else {
+        //         navbar.style.background = 'rgba(0, 0, 0, 0.7)';
+        //     }
+        // });
+
+        // Smooth scroll for nav links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offset = 70;
+                    const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('.image-slider').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                dots: false,
+                arrows: true,
+                infinite: true,
+                speed: 500,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/918210215503" target="_blank" class="whatsapp-float" style="text-decoration: none;">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+</body>
+
+</html>
